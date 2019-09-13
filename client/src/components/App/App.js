@@ -16,7 +16,7 @@ import Admin from '../../pages/Admin/Admin';
 import Footer from '../../components/Footer'
 import './App.css';
 import Customer from '../../pages/Customer/Customer';
-import Register from '../../pages/Register/Register';
+
 
 const particlesOptions = {
   particles: {
@@ -106,7 +106,6 @@ class App extends Component {
               <Route path='/contact' component={Contact} />
               <PrivateRoute path="/admin" component={Admin} />
               <PrivateRoute path="/customer/:id" component={Customer} />
-              <Route path='/register' component={Register}/>
               <Route component={NotFound} />
           </Switch>
           </div>
