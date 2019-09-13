@@ -10,13 +10,13 @@ import Home from '../../pages/Home/Home';
 import Services from '../../pages/Services';
 import Login from '../../pages/Login/Login';
 import Contact from '../../pages/Contacts/Contacts';
-// import Secret from '../../pages/Secret/Secret';
+import Header from '../Header/Header'
 import NotFound from '../../pages/NotFound/NotFound';
 import Admin from '../../pages/Admin/Admin';
 import Footer from '../../components/Footer'
 import './App.css';
 import Customer from '../../pages/Customer/Customer';
-import Register from '../../pages/Register/Register';
+
 
 const particlesOptions = {
   particles: {
@@ -97,7 +97,7 @@ class App extends Component {
           <Particles
             params={particlesOptions} />
           <Navigation />
-          
+          <Header />
           <div className='main'>
           <Switch>
               <Route exact path='/' component={Home} />
@@ -106,7 +106,6 @@ class App extends Component {
               <Route path='/contact' component={Contact} />
               <PrivateRoute path="/admin" component={Admin} />
               <PrivateRoute path="/customer/:id" component={Customer} />
-              <Route path='/register' component={Register}/>
               <Route component={NotFound} />
           </Switch>
           </div>

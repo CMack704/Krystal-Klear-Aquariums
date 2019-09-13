@@ -15,10 +15,10 @@ krystalControllers.post("/", (req, res) => {
         (response)=>{
             
             const msg = {
-                to: 'demartins37@yahoo.com',
+                to: 'krystalklearaquariums@gmail.com',
                 from: customerInfo.email,
-                subject: 'Project 3 Test Form has been Submitted',
-                text: 'test',
+                subject: 'Customer Web Submit',
+                text: 'A new customer has submitted their information for services.',
                 html: `<strong>${customerInfo.name}, has contacted you with this message ${customerInfo.message}</strong>`,
               };
                sgMail.send(msg);

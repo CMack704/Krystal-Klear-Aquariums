@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import setup from './images/setup.jpg'
 import clean from './images/tank-clean-1.jpg' 
-import logo from '../Home/logo.png';
 import filter from './images/new-filter.jpg'
 import '../Home/style.css'
 
@@ -21,18 +20,6 @@ class ServicesPage extends Component {
     }
     return (
       <div className='Home'>
-        <div id='header'>
-          <div id='number' className='col'>
-            <p>Phone: 980-267-7483</p>
-          </div>
-          <div id='logo' className='col'>
-            <h2>Our Services</h2>
-            <img src={logo} className='App-logo' alt='logo' />
-          </div>
-          <div id='email' className='col'>
-            <p>E-Mail: krystalklearaquariums@gmail.com</p>
-          </div>
-        </div>
         <div className='row'>
           <div className="card" id="about">
             <div className="card-header">
