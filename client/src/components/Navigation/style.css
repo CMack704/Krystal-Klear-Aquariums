@@ -14,7 +14,7 @@ nav {
     box-sizing: border-box;
     transition: .5s;
     background: black;
-    opacity: .7;
+
 }
 nav ul {
     display: flex;

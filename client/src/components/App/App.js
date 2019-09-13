@@ -10,7 +10,7 @@ import Home from '../../pages/Home/Home';
 import Services from '../../pages/Services';
 import Login from '../../pages/Login/Login';
 import Contact from '../../pages/Contacts/Contacts';
-// import Secret from '../../pages/Secret/Secret';
+import Header from '../Header/Header'
 import NotFound from '../../pages/NotFound/NotFound';
 import Admin from '../../pages/Admin/Admin';
 import Footer from '../../components/Footer'
@@ -97,7 +97,7 @@ class App extends Component {
           <Particles
             params={particlesOptions} />
           <Navigation />
-          
+          <Header />
           <div className='main'>
           <Switch>
               <Route exact path='/' component={Home} />
